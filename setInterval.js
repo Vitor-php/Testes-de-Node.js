@@ -4,3 +4,7 @@ const timeOut = 1000;
 const checking = () => console.log('checking!');
 
 let timer = setInterval(checking, timeOut);
+
+setTimeout(() => {
+    clearInterval(timer);
+}, 4000);
